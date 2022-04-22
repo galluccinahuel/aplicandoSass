@@ -8,6 +8,14 @@
     color: $colorFuente;
 }
 
+.titulo{
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+    text-decoration: solid #F38BA0 underline;
+}
+
+
 .mainGrid{
     display: grid;
     grid-template-areas: 
@@ -20,7 +28,7 @@
 
 #navBar{
     grid-area: navBar;
-    background-color: gray;
+    background-color: $colorRosa;
     width: 100% ;
     height: 10vh;
     display: flex;
@@ -38,12 +46,9 @@
         background-color: inherit;
         
         li{
-
             margin: 10px 10px;
             padding: 0 5px;
             background-color: inherit;
-
-
             list-style: none;
             a{
                 font-size: 24px;
@@ -65,6 +70,99 @@
     margin-bottom: 2rem;
     border-radius: 2%;
 }
+
+.cardContainer{
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card{
+    background-color: $colorRosa;
+    width: 15%;
+    height: 150px;
+    margin: 2rem;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 15px;    
+}
+
+.cardText{
+    background-color: $colorRosa;
+
+}
+
+.card{
+    img{
+        background-color: $colorRosa;
+        width: 50px;
+        height: 50px;   
+    }
+}
+
+.formContainer{
+    height: 25%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form{
+    background-color: $colorRosa;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    margin: 2rem;
+    width: 400px;
+    margin-bottom: 4rem;
+    box-shadow:  5px 5px 15px rgba(0,0,0,0.9);
+}
+
+.form label{
+    background-color: $colorRosa;
+}
+
+.btn{
+    width: 50%;
+    margin: 10px 100px 0 100px;
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+}
+
+.imgLink{
+    height: 50px;
+    width: 50px;
+    margin: 2rem;
+}
+
+.table{
+    display: grid;
+    grid-template-columns: repeat(6, 200px);
+    grid-template-rows: repeat(5,200px);
+    justify-content: center;
+    gap: 5px;
+}
+
+.celda{
+    width: 200px;
+    height: 200px;
+    border: 2px solid $colorRosa;
+    img{
+        width: 190px;
+        height: 190px;
+    }
+}
+
 
 #footer{
     grid-area: footer;
